@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <nav>
-        <a href="../index.html">Home</a> |
-        <a href="../projects/index.html">Projects</a> |
-        <a href="../contact/index.html">Contact</a> |
-        <a href="https://github.com/autumnartist/portfolio" target="_blank">Github</a> |
-        <a href="../resume/index.html">Resume</a>
-    </nav>
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <h1>Contact</h1>
-    <form action="mailto:arartist@mit.edu" method="POST" enctype="text/plain">
-        <p>Email: </p>
-        <input name="email" type="email">
-        <p>Subject: </p>
-        <input name="subject" type="text">
-        <p>Body: </p>
-        <textarea name="body"></textarea>
-        <button>Submit</button>
-    </form>
 </head>
-<body>
-    
+<body style="max-width:100ch; margin-inline: max(1em, (100% - 100ch) / 2)">
+    <nav class="navBar">
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html">Projects</a>
+        <a class="current" href="../contact/index.html">Contact</a>
+        <a href="https://github.com/autumnartist/portfolio" target="_blank">Github</a>
+        <a href="../resume/index.html">Resume</a>
+    </nav>
+    <h1>Contact</h1>
+    <form class="contactFields" action="mailto:arartist@mit.edu" method="POST" enctype="text/plain">
+        <label class="contactLabel">
+            Email: <input name="email" type="email">
+        </label>
+        <label class="contactLabel">
+            Subject: <input name="subject" type="text">
+        </label>
+        <label class="contactLabel">
+            Body: <textarea name="body"></textarea>
+        </label>
+        <button class="contactLabel contactSubmitButton">Submit</button>
+    </form>
 </body>
 </html>
