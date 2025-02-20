@@ -11,11 +11,11 @@ let currentLink = navLinks.find(a => a.host === location.host && a.pathname === 
 currentLink?.classList.add("current");
 
 let pages = [
-	{url: "../", title: "Home"},
-	{url: "../projects/", title: "Projects"},
-    {url: "../contact/", title: "Contact"},
+	{url: "", title: "Home"},
+	{url: "projects/", title: "Projects"},
+    {url: "contact/", title: "Contact"},
     {url: "https://github.com/autumnartist", title: "GitHub"},
-    {url: "../resume/", title: "Resume"}
+    {url: "resume/", title: "Resume"}
 ];
 
 let nav = document.createElement("nav");
